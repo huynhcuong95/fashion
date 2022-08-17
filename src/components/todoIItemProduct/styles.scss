@@ -1,0 +1,67 @@
+.itemProduct {
+    width: 282px;
+    height: 320px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    &__thumb {
+        width: 282px;
+        height: 187px;
+        overflow: hidden;
+        transition: all ease 0.2;
+        &:hover {
+            img {
+                -webkit-transform: scale3d(1.2, 1.2, 1);
+                transform: scale3d(1.2, 1.2, 1);
+            }
+        }
+        img {
+            max-width: 100%;
+            -webkit-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+    &__title {
+        font-family: "Abel";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32px;
+        color: #000000;
+        margin-top: 20px;
+
+    }
+    &__price {
+        font-family: "Abel";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+    &__btn {
+        background: #4ab9f8;
+        box-shadow: 0px 23px 60px rgba(0, 0, 0, 0.0851453);
+        backdrop-filter: blur(71.6137px);
+        border: 1px solid #fff;
+        border-radius: 6px;
+        font-family: "Abel";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23.28px;
+        line-height: 30px;
+        color: #ffffff;
+        width: 120px;
+        margin: auto;
+        margin-top: 4px;
+        transition: box-shadow 500ms;        
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+}
