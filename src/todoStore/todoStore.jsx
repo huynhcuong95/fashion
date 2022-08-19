@@ -8,7 +8,7 @@ class todos {
     isDisplay = false
     data 
     render = true
-    count =0
+    count ={total : 0, NumberUser:0}
     constructor() {
         makeAutoObservable(this)
     }
@@ -27,6 +27,8 @@ class todos {
     setCount(e){
         this.count = e
     }
+    
+    
 }
 
 const todoStores = new todos()

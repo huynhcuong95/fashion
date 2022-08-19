@@ -11,8 +11,8 @@ const TodoListproduct = props => {
     return (
         <div className='listProduct'>
             {
-                    props.dataProuct && props.dataProuct.map((item,index)=>(
-                        <TodoItemProduct item={item} key={index}/>
+                    props.dataProduct && props.dataProduct.map((item,index)=>(
+                        <TodoItemProduct handleAddCart={props.handleAddCart} item={item} key={index} hand />
                     ))
                 
             }

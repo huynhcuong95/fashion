@@ -4,12 +4,12 @@ import pic from "../../image/icon_cart.png";
 import logo from "../../image/logo.png";
 import "./styles.scss";
 import { Link } from "react-router-dom";
-import ListItemNotifi from "./ListItemNotifi/listItemNotifi";
 import { observer } from "mobx-react";
 import todoStores from "../../todoStore/todoStore";
 
+
 const Header = (props) => {
-  console.log(todoStores.isDisplay);
+console.log(todoStores.count.NumberUser);
   return (
     <>
       <div className="header">
@@ -22,9 +22,9 @@ const Header = (props) => {
           <a onClick={()=>
             todoStores.checkDisplay()} className="header__box--card">
             <img src={pic} alt="ádasd" />{" "}
-            <span className="menu-items__number">2</span>
+            <span className="menu-items__number">{todoStores.count.NumberUser}</span>
           </a>
-          <ListItemNotifi/>
+         
           <div className="menu">
             <input type="checkbox" name="" id="" className="check" />
             <ul className="menu-items">
